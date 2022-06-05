@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+/* .top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    margin: 20px;   
+}
+.Skill-p{
+    margin-right: 300px;
+    padding: 5px;
+    font-size: 15px;
+}
+.btn{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(68, 50, 184);
+    border-color: rgb(68, 50, 184);
+}
+.top-container{
+    display: flex;
+}
+/* button{
+    margin-left: 250px;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+} */
+
+
+
+
+
+
+/* nav{
+    display: flex;
+
+}
+.top-container{
+    display: flex;
+} */
