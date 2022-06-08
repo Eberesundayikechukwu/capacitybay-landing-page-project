@@ -17,11 +17,12 @@
     align-items: center;
 } */
 body{
-    background: var(--bg-color)
+    background: var(--bg-color);
+    overflow-x: hidden;
 }
 .container{
     width: 100%;
-    max-width: 85%;
+    max-width: 75%;
     margin: 0 auto;
 
 }
@@ -32,9 +33,11 @@ header{
 }
 header .nav-bar{
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-between;  
     padding: 20px 30px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .Skill-p{
@@ -60,7 +63,7 @@ header .nav-bar{
 }
 .top-container .section1,
 .top-container .section2{
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 45%;
 }
 .top-container .section1{
@@ -83,18 +86,55 @@ header .nav-bar{
     font-weight: bold;
     background: var(--color-gradient);
 }
+.top-container .section2{
+    display: grid;
+    place-items: center;
+}
 .top-container .section2 .img-con{
-    background-color: red;
     width: 250px;
-    height: 400px;
+    height: 440px;
+    position: relative;
+    border-radius: 7rem;
+    /* overflow: hidden; */
+    background: url("images/samasc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     /* border-radius: 50%; */
     /* border-top-right-radius: 40%; */
-    border-top-left-radius: 40%;
-    border-bottom-right-radius: 40%;
+    
     /* border-bottom-left-radius: 40%; */
 }
-.top-container .section2 .img-con img{
+.top-container .section2 .right-stuff{
+    width: 260px;
+    height: 900px;
+    transform: rotate(45deg);
+    right: 10%;
+    bottom: 31%;
+    position: absolute;
+    background-color: red;
+    background: linear-gradient(40deg, #30b2f8, #9122f1);
+    border-radius: 7rem;
+}
+/* .top-container .section2 .img-con img{
     width: 100%;
+} */
+.top-container .section2 .img-con .flag{
+    background-color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.4);
+    position: absolute;
+}
+.top-container .section2 .img-con .members{
+    right: -70px;
+    top: 60px;
+    font-size: 1rem;
+}
+.top-container .section2 .img-con .course{
+    bottom: 50px;
+    left: -70px;
 }
 /* button{
     margin-left: 250px;
