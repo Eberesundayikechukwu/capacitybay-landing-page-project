@@ -90,7 +90,7 @@ header .nav-bar{
     display: grid;
     place-items: center;
 }
-.top-container .section2 .img-con{
+.top-container .section2 .ram .img-con{
     width: 250px;
     height: 440px;
     position: relative;
@@ -100,25 +100,26 @@ header .nav-bar{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* background-color: red; */
     /* border-radius: 50%; */
     /* border-top-right-radius: 40%; */
     
     /* border-bottom-left-radius: 40%; */
 }
-.top-container .section2 .right-stuff{
+.top-container .section2 .ram{
+    position: relative;
+}
+.top-container .section2 .ram .right-stuff{
     width: 260px;
     height: 900px;
-    transform: rotate(45deg);
-    right: 10%;
-    bottom: 31%;
+    transform: rotate(45deg) translate(90%, -15%);
+    right: 0;
+    bottom: 0;
     position: absolute;
-    background-color: red;
     background: linear-gradient(40deg, #30b2f8, #9122f1);
     border-radius: 7rem;
 }
-/* .top-container .section2 .img-con img{
-    width: 100%;
-} */
+
 .top-container .section2 .img-con .flag{
     background-color: #fff;
     padding: 10px 20px;
