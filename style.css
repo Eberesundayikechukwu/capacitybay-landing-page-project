@@ -76,6 +76,7 @@ header .nav-bar{
 }
 .top-container .section1 p{
     margin-bottom: 50px;
+    width: 320px;
 }
 .top-container .section1 button{
     border-radius: 30px;
