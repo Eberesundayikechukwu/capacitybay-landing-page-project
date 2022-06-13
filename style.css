@@ -72,10 +72,11 @@ header .nav-bar{
 }
 .top-container .section1 h1{
     font-size: 3.5rem;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    width: 500px;
 }
 .top-container .section1 p{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     width: 320px;
 }
 .top-container .section1 button{
@@ -87,7 +88,7 @@ header .nav-bar{
     cursor: pointer;
     font-weight: bold;
     background: var(--color-gradient);
-    margin: 35px;
+    margin: 5px 0px;
 }
 .top-container .section2{
     display: grid;
@@ -142,7 +143,7 @@ header .nav-bar{
     left: -70px;
 }
 .mid-container{
-    margin:200px auto;
+    margin:150px auto;
    width: 75%;
    display: grid;
    grid-gap: 10px;
