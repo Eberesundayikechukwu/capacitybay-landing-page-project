@@ -8,7 +8,7 @@
 }
 :root{
     --top-btn-color: #010935;
-    --color-gradient: linear-gradient(45deg, #ff8800,#ffa90a, #ff0606);
+    --color-gradient: linear-gradient(to bottom, darkorange, rgb(236, 27, 139));
     --bg-color: linear-gradient(45deg, #e1e8f3, #eeeff0);
 }
 /* .top-container{
@@ -18,7 +18,11 @@
 } */
 body{
     background: var(--bg-color);
+    
+}
+.wrapper{
     overflow-x: hidden;
+    width: 100vw;
 }
 .Mycontainer{
     width: 100%;
@@ -26,12 +30,12 @@ body{
     margin: 0 auto;
 
 }
-header{
+/* header{
     width: 100%;
     height: 100vh;
     /* background: ; */
-}
-header .nav-bar{
+
+.nav-bar{
     display: flex;
     justify-content: space-between;  
     padding: 20px 30px;
@@ -70,7 +74,7 @@ header .nav-bar{
     padding: 50px;
     margin: 10px;
 }
-.top-container .section1 h1{
+.top-container .section1 .caption{
     font-size: 3.5rem;
     margin-bottom: 15px;
     width: 500px;
@@ -134,30 +138,34 @@ header .nav-bar{
     position: absolute;
 }
 .top-container .section2 .img-con .members{
-    right: -70px;
-    top: 60px;
+    right: -15%;
+    top: 20%;
     font-size: 1rem;
 }
 .top-container .section2 .img-con .course{
-    bottom: 50px;
-    left: -70px;
+    bottom: 20%;
+    left: -15%;
 }
 .mid-container{
     margin:150px auto;
-   width: 75%;
+    height: 100vh;
+   width: 100%;
    display: grid;
-   grid-gap: 10px;
-   justify-items: end;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 20px;
+   /* display: grid;
+   
+   justify-items: center; */
+   /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+   /* grid-template-columns: 1fr 1fr 1fr; */
   /* background-color: #2196F3; */
 }
 .mid-container .check{
     cursor:pointer;
     /* display: inline-block;  */
     /* align-items: center; */
-    width: 300px;
-    height: 250px;
-    margin: 5px 0px;
+    /* width: 400px; */
+    height: 400px;
     /* text-align: center; */
     font-size: 15px;
     border-radius: 10px;
@@ -204,4 +212,104 @@ header .nav-bar{
     background-clip: text;
     color: transparent;
     font-weight: bold;
+}
+@media screen and (max-width: 1189px) {
+    .Mycontainer{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .Mycontainer{
+        max-width: 100%;
+    }
+    .right-stuff{
+        display: none;
+    }
+    .top-container .section1 .caption{
+        font-size: 2.2rem;
+    }
+    .top-container .section1{
+    /* background-color: #fff; */
+    width: 50%;
+    padding: 20px 0px 0px 40px;
+}
+    .top-container .section2{
+        width: 50%;
+    }
+    .top-container .section2 .ram .img-con{
+        /* border-radius: 50%; */
+        width: 215px;
+        height: 405px;
+    }
+    .top-container .section2 .img-con .flag{
+        padding: 5px 10px;
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width: 834px) {
+    
+    .top-container .section1 .caption{
+        font-size: 2.6rem;
+        width: 96%;
+    }
+    .top-container .section1 p{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .top-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-container .section1 .caption{
+        font-size: 2.6rem;
+        width: 96%;
+    }
+    .top-container .section1 p{
+        width: 100%;
+    }
+    .top-container .section2 .ram{
+        width: 100%;
+    }
+    .top-container .section2 .ram .img-con{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .top-container .section2 .img-con .course {
+        bottom: 10%;
+        left: -10%;
+    }
+    .top-container .section2 .img-con .members {
+        right: -10%;
+        top: 25%;
+        font-size: 1rem;
+    }
+    .top-container .section1{
+        width: 100%;
+    }
+    .top-container .section2 {
+        width: 100%;
+        margin: 0;
+    }
+    .top-container .section2 .img-con .flag{
+        padding: 10px 20px;
+    }
+    .top-container .section2 .img-con .members p{
+        font-size: 0.9rem;
+    }
+    .top-container .section2 .img-con .members h1{
+        font-size: 1rem;
+    }
+    .top-container .section2 .img-con .course p{
+        font-size: 0.9rem;
+    }
+    .top-container .section2 .img-con .course h1{
+        font-size: 1rem;
+    }
+    .mid-container{
+        width: 100%;
+    }
 }
