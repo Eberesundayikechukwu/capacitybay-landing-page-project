@@ -20,7 +20,7 @@ body{
     background: var(--bg-color);
     overflow-x: hidden;
 }
-.container{
+.Mycontainer{
     width: 100%;
     max-width: 75%;
     margin: 0 auto;
@@ -29,7 +29,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background: ;
+    /* background: ; */
 }
 header .nav-bar{
     display: flex;
@@ -67,14 +67,17 @@ header .nav-bar{
     width: 45%;
 }
 .top-container .section1{
-    padding: 70px;
+    padding: 50px;
+    margin: 10px;
 }
 .top-container .section1 h1{
     font-size: 3.5rem;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    width: 500px;
 }
 .top-container .section1 p{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    width: 320px;
 }
 .top-container .section1 button{
     border-radius: 30px;
@@ -85,10 +88,12 @@ header .nav-bar{
     cursor: pointer;
     font-weight: bold;
     background: var(--color-gradient);
+    margin: 5px 0px;
 }
 .top-container .section2{
     display: grid;
     place-items: center;
+    margin-top: 100px;
 }
 .top-container .section2 .ram .img-con{
     width: 250px;
@@ -137,22 +142,66 @@ header .nav-bar{
     bottom: 50px;
     left: -70px;
 }
-/* button{
-    margin-left: 250px;
-    padding: 20px;
-    background-color: aqua;
-    border-radius: 10px;
-} */
-
-
-
-
-
-
-/* nav{
-    display: flex;
-
+.mid-container{
+    margin:150px auto;
+   width: 75%;
+   display: grid;
+   grid-gap: 10px;
+   justify-items: end;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* background-color: #2196F3; */
 }
-.top-container{
+.mid-container .check{
+    cursor:pointer;
+    /* display: inline-block;  */
+    /* align-items: center; */
+    width: 300px;
+    height: 250px;
+    margin: 5px 0px;
+    /* text-align: center; */
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    /* border: 5px solid #bbb; */
+    background-color: white;
+}
+.mid-container .courses{
+    color: white;
+    /* text-align: center; */
     display: flex;
-} */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 25px 5px;
+    /* padding-bottom: 25px; */
+    background: var(--color-gradient);
+}
+.ico{
+    background: var(--color-gradient);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+.mid-container .check h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.mid-container .check p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.mid-container a{
+    text-decoration: none;
+    border: none;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
