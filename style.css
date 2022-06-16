@@ -349,4 +349,45 @@ body{
         width: 100%;
         margin-top: 50px;
     }
+    .bottom-container .my-btn{
+        width: 100%;
+    } 
+    .bottom-container .my-btn .Skills{
+        color: white;
+        font-size: 0.8rem;
+    }
+    .bottom-container .my-btn .bottom-btn{
+        background: var(--color-gradient);
+        border-radius: 20px;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight: bold;
+    
+    }
+    
 }
+@media screen and (max-width: 290px){
+    .mid-container .check p{
+        font-size: 12px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+/* @media screen and(max-width: 317px) {
+    .bottom-container .my-btn{
+        width: 100%;
+        /* display: flex;
+        justify-content: space-between;  
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+    } 
+    .bottom-container .my-btn .Skills{
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+} */
